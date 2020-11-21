@@ -17,7 +17,6 @@ import { LazyLoadImageModule} from 'ng-lazyload-image';
 import { PostElementComponent } from './components/posts/post-element/post-element.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { AddPostComponent } from './components/posts/add-post/add-post.component';
-import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -44,7 +43,6 @@ import {MatIconModule} from '@angular/material/icon';
     ReactiveFormsModule,
     LazyLoadImageModule,
     ScrollingModule,
-    MatIconModule,
   ],
   bootstrap: [AppComponent]
 })
