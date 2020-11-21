@@ -1,0 +1,28 @@
+.gallery-container {
+  background-color: lightgoldenrodyellow;
+
+  .galley-item {
+    margin: 5px;
+    flex: 1 0 30%;
+  }
+
+  &.full {
+    .galley-item {
+      flex-basis: 20%;
+    }
+  }
+}
+
+::ng-deep .cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.key {
+  font-weight: bold;
+  padding-right: 0.3em;
+  font-size: 0.9em;
+}
+

@@ -1,0 +1,30 @@
+.app {
+  font-size: calc(0.5em + 1vmin);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    padding: 10px;
+
+  }
+
+  .middle-container {
+    display: flex;
+    height: 70%;
+
+    app-menu {
+      padding-right: 2%;
+      flex: 1;
+    }
+
+    router-outlet + ::ng-deep * {
+
+      flex: 5;
+      height: 100%;
+    }
+
+
+  }
+}
+

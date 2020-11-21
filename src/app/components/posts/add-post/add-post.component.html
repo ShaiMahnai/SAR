@@ -1,0 +1,7 @@
+<div class="title">Add Post</div>
+<form class="form" action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input class="user-id" type="number" placeholder="User Id" formControlName="userId">
+  <input type="Text" placeholder="Title" formControlName="title">
+  <input  class="body" type="Text" placeholder="Body" formControlName="body">
+  <input id="submit" type="submit">
+</form>

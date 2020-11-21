@@ -1,0 +1,8 @@
+.home-container {
+  background-color: red;
+
+  & > * {
+    padding: 2em;
+    flex: 1;
+  }
+}

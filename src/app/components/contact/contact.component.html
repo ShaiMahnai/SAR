@@ -1,0 +1,45 @@
+<div class="component-container contact-container">
+  <div class="title">Contact us</div>
+  <div class="content-container">
+    <form class="form-horizontal" (ngSubmit)="onSubmit()" [formGroup]="form">
+
+      <div class="form-group" [ngClass]="displayFieldCss('name')">
+        <div class="col-sm-12">
+          <label for="name" class="control-label required">Name</label>
+          <input type="text" id="name" class="form-control" formControlName="name">
+          <app-field-error-display
+            [displayError]="isFieldValid('name')"
+            errorMsg="Empty phone">
+          </app-field-error-display>
+        </div>
+      </div>
+
+      <div class="form-group" [ngClass]="displayFieldCss('email')">
+        <div class="col-sm-12">
+          <label for="email" class="control-label required">Email</label>
+          <input type="text" id="email" class="form-control" formControlName="email">
+          <app-field-error-display
+            [displayError]="isFieldValid('email')"
+            errorMsg="Invalid email">
+          </app-field-error-display>
+        </div>
+      </div>
+
+      <div class="form-group" [ngClass]="displayFieldCss('phone')">
+        <div class="col-sm-12">
+          <label for="phone" class="control-label required">phone</label>
+          <input type="text" id="phone" class="form-control" formControlName="phone">
+          <app-field-error-display
+            [displayError]="isFieldValid('phone')"
+            errorMsg="Invalid phone">
+          </app-field-error-display>
+        </div>
+      </div>
+
+
+      <input id="submit" type="submit">
+      <div *ngIf="formSubmitted">Form Submitted</div>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.posts-container {
+  background-color: lightgreen;
+
+  .content-container {
+    app-post-element {
+      flex-basis: 45%;
+      padding-bottom: 2em;
+    }
+
+    app-add-post {
+      flex-basis: 100%;
+    }
+  }
+}

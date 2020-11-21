@@ -1,0 +1,21 @@
+.contact-container {
+  background-color: lightblue;
+  height: 100%;
+}
+
+.form-group {
+  padding: 10px;
+
+  label {
+    padding-right: 10px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    text-align: right;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="component-container gallery-container"
+     [ngClass]="{'full':fullPageSize}"
+>
+  <div class="title">Photos</div>
+  <cdk-virtual-scroll-viewport itemSize="50" class="content-container">
+    <div class='galley-item' *cdkVirtualFor="let photo of photos">
+      <div class="key">{{photo.title}}:</div>
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title"/>
+    </div>
+  </cdk-virtual-scroll-viewport>
+
+</div>
