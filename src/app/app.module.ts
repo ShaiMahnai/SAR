@@ -13,7 +13,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MenuComponent } from './components/menu/menu.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FieldErrorDisplayComponent } from './components/contact/field-error-display/field-error-display.component';
-import { LazyLoadImageModule} from 'ng-lazyload-image';
 import { PostElementComponent } from './components/posts/post-element/post-element.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { AddPostComponent } from './components/posts/add-post/add-post.component';
@@ -41,7 +40,6 @@ import { AddPostComponent } from './components/posts/add-post/add-post.component
     }),
     FormsModule,
     ReactiveFormsModule,
-    LazyLoadImageModule,
     ScrollingModule,
   ],
   bootstrap: [AppComponent]
