@@ -1,11 +1,12 @@
 <div class="component-container posts-container">
   <div class="title">Posts</div>
   <div class="content-container">
+    <app-add-post *ngIf="fullPageSize"></app-add-post>
+
     <app-post-element
       *ngFor="let post of posts"
       [post]="post"
     > >
     </app-post-element>
-    <app-add-post></app-add-post>
   </div>
 </div>

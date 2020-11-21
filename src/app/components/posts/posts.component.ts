@@ -11,6 +11,7 @@ import * as types from '../../store/types';
 })
 export class PostsComponent implements OnInit {
   @Input() showFirst = -1; // if showFirst = -1 =>display all
+  @Input() fullPageSize = true;
 
   posts: types.Post[] = [];
 
